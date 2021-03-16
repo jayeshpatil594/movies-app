@@ -50,7 +50,6 @@ export const getMovieDetails = (movieId) => async (dispatch) => {
   dispatch({
     type: FETCH_MOVIE_DETAILS,
     movieDetails: movie,
-    moviesByGenre: moviesByGenre.data,
   });
 };
 

@@ -13,8 +13,10 @@ class MovieDetails extends Component {
   }
   componentDidMount() {
     console.log(this.props);
-    this.props.getMovieDetails(this.props.match.params.movieId);
-    this.props.getMoviesByGenre(this.props.movieDetails.genres[0]);
+    if (typeof this.props.getMovieDetails === "function")
+      this.props.getMovieDetails(this.props.match.params.movieId);
+    if (typeof this.props.getMoviesByGenre === "function")
+      this.props.getMoviesByGenre(this.props.movieDetails.genres[0]);
     this.setState({
       loading: false,
     });

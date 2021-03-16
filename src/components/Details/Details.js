@@ -5,6 +5,10 @@ import styled from "styled-components";
 
 const Details = (props) => {
   // const { movieDetails } = props;
+  if (!props.movieDetails) {
+    return <div> No details found </div>;
+  }
+
   const releaseYear = new Date(props.movieDetails.release_date).getFullYear();
 
   return (
