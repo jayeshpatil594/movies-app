@@ -9,7 +9,7 @@ const Details = (props) => {
 
   return (
     <div style={{ backgroundColor: "black" }}>
-      <Link to="/">
+      <Link to="/movies-app">
         <h4 style={{ color: "red", padding: "1rem" }}>
           <span style={{ fontWeight: "900" }}> ⬅️ netflix</span>roulette
           <span style={{ position: "absolute", right: "5%" }}>🔍</span>

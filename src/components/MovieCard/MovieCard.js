@@ -8,7 +8,7 @@ const MovieCard = (props) => {
   const releaseYear = new Date(movie.release_date).getFullYear();
   return (
     <Col>
-      <Link to={`/details/${movie.id}`}>
+      <Link to={`/movies-app/details/${movie.id}`}>
         <div style={{ paddingBottom: "0.5rem" }}>
           <img
             style={{ width: "100%" }}
