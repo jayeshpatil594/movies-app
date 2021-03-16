@@ -16,9 +16,9 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/movies-app" component={Home} />
             <Route
-              path="/details/:movieId"
+              path="/movies-app/details/:movieId"
               render={(props) => (
                 <MovieDetails key={props.match.params.movieId} {...props} />
               )}
