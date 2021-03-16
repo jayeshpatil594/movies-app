@@ -1,11 +1,12 @@
 import React, { Fragment, useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import styled from "styled-components";
-import { searchMovies } from "../../actions/movies";
+import { searchMoviesByTitle, searchMoviesByGenre } from "../../actions";
 import { connect } from "react-redux";
 
 const Search = (props) => {
   const [searchValue, setSearchValue] = useState("");
+  const [searchBy, setSearchBy] = useState("Title");
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -13,9 +14,21 @@ const Search = (props) => {
     console.log("Search movie", e.target.value);
   };
 
-  const handleMovieSearch = (e) => {
+  const handleKeyUp = (e) => {
+    if (e.code === "Enter") {
+      handleChange(e);
+      handleMovieSearch();
+    }
+  };
+  const handleMovieSearch = () => {
     console.log(props, searchValue);
-    props.searchMovies(searchValue);
+    searchBy.toLowerCase() === "title"
+      ? props.searchMoviesByTitle(searchValue)
+      : props.searchMoviesByGenre(searchValue);
+  };
+
+  const handleSearchBy = (e) => {
+    setSearchBy(e.target.textContent);
   };
 
   return (
@@ -29,10 +42,11 @@ const Search = (props) => {
         <Col sm={8}>
           <SearchBox>
             <input
-              type="text"
+              type="search"
               placeholder="Search movies"
               style={{ height: "3rem", width: "100%" }}
               onChange={handleChange}
+              onKeyUp={handleKeyUp}
             />
           </SearchBox>
         </Col>
@@ -45,8 +59,23 @@ const Search = (props) => {
       </Row>
       <Row>
         <Col style={{ marginTop: "0.5rem" }}>
-          SEARCH BY <Button variant="danger">TITLE</Button>
-          <Button variant="secondary">GENRE</Button>
+          SEARCH BY{" "}
+          <Button
+            variant={
+              searchBy.toLowerCase() === "title" ? "danger" : "secondary"
+            }
+            onClick={handleSearchBy}
+          >
+            TITLE
+          </Button>
+          <Button
+            variant={
+              searchBy.toLowerCase() === "genres" ? "danger" : "secondary"
+            }
+            onClick={handleSearchBy}
+          >
+            GENRES
+          </Button>
         </Col>
       </Row>
     </Fragment>
@@ -68,5 +97,6 @@ const mapStateToProps = (state) => ({
   movies: state.movies.sortedMovies,
 });
 export default connect(mapStateToProps, {
-  searchMovies,
+  searchMoviesByTitle,
+  searchMoviesByGenre,
 })(Search);

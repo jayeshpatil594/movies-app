@@ -1,0 +1,328 @@
+export const moviesByGenre = {
+  data: [
+    {
+      id: 181808,
+      title: "Star Wars: The Last Jedi",
+      tagline: "The Saga Continues",
+      vote_average: 7.1,
+      vote_count: 4732,
+      release_date: "2017-12-13",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+      overview:
+        "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+      budget: 200000000,
+      revenue: 1325937250,
+      genres: ["Fantasy", "Adventure", "Science Fiction"],
+      runtime: 152,
+    },
+    {
+      id: 284054,
+      title: "Black Panther",
+      tagline: "Long live the king",
+      vote_average: 7.3,
+      vote_count: 3788,
+      release_date: "2018-02-13",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+      overview:
+        "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without.  Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister,  members of the Dora Milaje (the Wakandan \"special forces\"), and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+      budget: 200000000,
+      revenue: 1245257672,
+      genres: ["Action", "Adventure", "Fantasy", "Science Fiction"],
+      runtime: 134,
+    },
+    {
+      id: 284053,
+      title: "Thor: Ragnarok",
+      tagline: "No Hammer. No Problem.",
+      vote_average: 7.4,
+      vote_count: 5349,
+      release_date: "2017-10-25",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+      overview:
+        "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+      budget: 180000000,
+      revenue: 854229371,
+      genres: ["Action", "Adventure", "Fantasy"],
+      runtime: 130,
+    },
+    {
+      id: 321612,
+      title: "Beauty and the Beast",
+      tagline: "Be our guest.",
+      vote_average: 6.8,
+      vote_count: 7861,
+      release_date: "2017-03-16",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/tWqifoYuwLETmmasnGHO7xBjEtt.jpg",
+      overview:
+        "A live-action adaptation of Disney's version of the classic tale of a cursed prince and a beautiful young woman who helps him break the spell.",
+      budget: 160000000,
+      revenue: 1263521126,
+      genres: ["Family", "Fantasy", "Romance"],
+      runtime: 129,
+    },
+    {
+      id: 399055,
+      title: "The Shape of Water",
+      tagline: "A Fairy Tale for Troubled Times",
+      vote_average: 7.3,
+      vote_count: 3200,
+      release_date: "2017-12-01",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/k4FwHlMhuRR5BISY2Gm2QZHlH5Q.jpg",
+      overview:
+        "An other-worldly story, set against the backdrop of Cold War era America circa 1962, where a mute janitor working at a lab falls in love with an amphibious man being held captive there and devises a plan to help him escape.",
+      budget: 19500000,
+      revenue: 185545281,
+      genres: ["Drama", "Fantasy", "Romance"],
+      runtime: 123,
+    },
+    {
+      id: 141052,
+      title: "Justice League",
+      tagline: "",
+      vote_average: 6.4,
+      vote_count: 3960,
+      release_date: "2017-11-15",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+      overview:
+        "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+      budget: 500000000,
+      revenue: 655894816,
+      genres: ["Action", "Adventure", "Fantasy", "Science Fiction"],
+      runtime: 120,
+    },
+    {
+      id: 268896,
+      title: "Pacific Rim: Uprising",
+      tagline: "Rise Up",
+      vote_average: 6,
+      vote_count: 318,
+      release_date: "2018-03-21",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/v5HlmJK9bdeHxN2QhaFP1ivjX3U.jpg",
+      overview:
+        "It has been ten years since The Battle of the Breach and the oceans are still, but restless. Vindicated by the victory at the Breach, the Jaeger program has evolved into the most powerful global defense force in human history. The PPDC now calls upon the best and brightest to rise up and become the next generation of heroes when the Kaiju threat returns.",
+      budget: 150000000,
+      revenue: 150613316,
+      genres: ["Action", "Fantasy", "Science Fiction", "Adventure"],
+      runtime: 111,
+    },
+    {
+      id: 22,
+      title: "Pirates of the Caribbean: The Curse of the Black Pearl",
+      tagline: "Prepare to be blown out of the water.",
+      vote_average: 7.5,
+      vote_count: 8914,
+      release_date: "2003-07-09",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/tkt9xR1kNX5R9rCebASKck44si2.jpg",
+      overview:
+        "Jack Sparrow, a freewheeling 17th-century pirate, quarrels with a rival pirate bent on pillaging Port Royal. When the governor's daughter is kidnapped, Sparrow decides to help the girl's love save her.",
+      budget: 140000000,
+      revenue: 655011224,
+      genres: ["Adventure", "Fantasy", "Action"],
+      runtime: 143,
+    },
+    {
+      id: 122917,
+      title: "The Hobbit: The Battle of the Five Armies",
+      tagline: "Witness the defining chapter of the Middle-Earth saga",
+      vote_average: 7.2,
+      vote_count: 6067,
+      release_date: "2014-12-10",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/9zRzFJuaj0CHIOhAkcCcFTvyu2X.jpg",
+      overview:
+        "Immediately after the events of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
+      budget: 250000000,
+      revenue: 956019788,
+      genres: ["Action", "Adventure", "Fantasy"],
+      runtime: 144,
+    },
+    {
+      id: 209112,
+      title: "Batman v Superman: Dawn of Justice",
+      tagline: "Justice or revenge",
+      vote_average: 5.8,
+      vote_count: 9075,
+      release_date: "2016-03-23",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/cGOPbv9wA5gEejkUN892JrveARt.jpg",
+      overview:
+        "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+      budget: 250000000,
+      revenue: 873260194,
+      genres: ["Action", "Adventure", "Fantasy"],
+      runtime: 151,
+    },
+    {
+      id: 98566,
+      title: "Teenage Mutant Ninja Turtles",
+      tagline:
+        "Mysterious. Dangerous. Reptilious. You've never seen heroes like this.",
+      vote_average: 5.8,
+      vote_count: 3224,
+      release_date: "2014-08-07",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/oDL2ryJ0sV2bmjgshVgJb3qzvwp.jpg",
+      overview:
+        "The city needs heroes. Darkness has settled over New York City as Shredder and his evil Foot Clan have an iron grip on everything from the police to the politicians. The future is grim until four unlikely outcast brothers rise from the sewers and discover their destiny as Teenage Mutant Ninja Turtles. The Turtles must work with fearless reporter April and her wise-cracking cameraman Vern Fenwick to save the city and unravel Shredder's diabolical plan.",
+      budget: 125000000,
+      revenue: 477200000,
+      genres: ["Science Fiction", "Action", "Adventure", "Fantasy", "Comedy"],
+      runtime: 101,
+    },
+    {
+      id: 76338,
+      title: "Thor: The Dark World",
+      tagline: "Delve into the darkness",
+      vote_average: 6.7,
+      vote_count: 6522,
+      release_date: "2013-10-29",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg",
+      overview:
+        "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+      budget: 170000000,
+      revenue: 644571402,
+      genres: ["Action", "Adventure", "Fantasy"],
+      runtime: 112,
+    },
+    {
+      id: 10195,
+      title: "Thor",
+      tagline: "Two worlds. One hero.",
+      vote_average: 6.6,
+      vote_count: 8530,
+      release_date: "2011-04-21",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/bIuOWTtyFPjsFDevqvF3QrD1aun.jpg",
+      overview:
+        "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+      budget: 150000000,
+      revenue: 449326618,
+      genres: ["Adventure", "Fantasy", "Action"],
+      runtime: 115,
+    },
+    {
+      id: 76757,
+      title: "Jupiter Ascending",
+      tagline: "Expand your universe.",
+      vote_average: 5.2,
+      vote_count: 3359,
+      release_date: "2015-02-04",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/aMEsvTUklw0uZ3gk3Q6lAj6302a.jpg",
+      overview:
+        "In a universe where human genetic material is the most precious commodity, an impoverished young Earth woman becomes the key to strategic maneuvers and internal strife within a powerful dynasty…",
+      budget: 176000003,
+      revenue: 183987723,
+      genres: ["Science Fiction", "Fantasy", "Action", "Adventure"],
+      runtime: 124,
+    },
+    {
+      id: 166426,
+      title: "Pirates of the Caribbean: Dead Men Tell No Tales",
+      tagline: "",
+      vote_average: 6.5,
+      vote_count: 4420,
+      release_date: "2017-05-23",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg",
+      overview:
+        "Thrust into an all-new adventure, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant and beautiful astronomer and a headstrong young man in the British navy.",
+      budget: 230000000,
+      revenue: 794191988,
+      genres: ["Adventure", "Action", "Fantasy", "Comedy"],
+      runtime: 129,
+    },
+    {
+      id: 150689,
+      title: "Cinderella",
+      tagline: "Midnight is just the beginning.",
+      vote_average: 6.6,
+      vote_count: 3113,
+      release_date: "2015-03-12",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/o1F2aloaOUufHHOsV0laA9aw9N0.jpg",
+      overview:
+        "When her father unexpectedly passes away, young Ella finds herself at the mercy of her cruel stepmother and her daughters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger in the woods.",
+      budget: 95000000,
+      revenue: 543514353,
+      genres: ["Romance", "Fantasy", "Family", "Drama"],
+      runtime: 105,
+    },
+    {
+      id: 127585,
+      title: "X-Men: Days of Future Past",
+      tagline: "To save the future, they must alter the past",
+      vote_average: 7.5,
+      vote_count: 7466,
+      release_date: "2014-05-15",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/giUK8ppRbfistadVzHtpainkhq4.jpg",
+      overview:
+        "The ultimate X-Men ensemble fights a war for the survival of the species across two time periods as they join forces with their younger selves in an epic battle that must change the past – to save our future.",
+      budget: 250000000,
+      revenue: 747862775,
+      genres: ["Action", "Adventure", "Fantasy", "Science Fiction"],
+      runtime: 131,
+    },
+    {
+      id: 120,
+      title: "The Lord of the Rings: The Fellowship of the Ring",
+      tagline: "One ring to rule them all",
+      vote_average: 8.1,
+      vote_count: 10730,
+      release_date: "2001-12-18",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/bi9JddwTwBt3ixGLAiMAF7OXMbV.jpg",
+      overview:
+        "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+      budget: 93000000,
+      revenue: 871368364,
+      genres: ["Adventure", "Fantasy", "Action"],
+      runtime: 178,
+    },
+    {
+      id: 299536,
+      title: "Avengers: Infinity War",
+      tagline: "An entire universe. Once and for all.",
+      vote_average: 0,
+      vote_count: 0,
+      release_date: "2018-04-25",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      overview:
+        "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      budget: 500000000,
+      revenue: 0,
+      genres: ["Adventure", "Science Fiction", "Fantasy", "Action"],
+      runtime: 156,
+    },
+    {
+      id: 8966,
+      title: "Twilight",
+      tagline: "When you can live forever, what do you live for?",
+      vote_average: 5.8,
+      vote_count: 4813,
+      release_date: "2008-11-20",
+      poster_path:
+        "https://image.tmdb.org/t/p/w500/nlvPMLCdum7bkHKmDSMnNLGztmW.jpg",
+      overview:
+        "When Bella Swan moves to a small town in the Pacific Northwest to live with her father, she starts school and meets the reclusive Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire. Despite Edward's repeated cautions, Bella can't help but fall in love with him, a fatal move that endangers her own life when a coven of bloodsuckers try to challenge the Cullen clan.",
+      budget: 37000000,
+      revenue: 392616625,
+      genres: ["Adventure", "Fantasy", "Drama", "Romance"],
+      runtime: 122,
+    },
+  ],
+  total: 407,
+  offset: 0,
+  limit: 20,
+};

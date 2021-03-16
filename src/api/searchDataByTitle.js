@@ -1,4 +1,4 @@
-export const searchData = {
+export const searchDataByTitle = {
   data: [
     {
       id: 511679,

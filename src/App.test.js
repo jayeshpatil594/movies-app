@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+import React from "react";
+import { shallow, mount } from "enzyme";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("App component should have a div with className App", () => {
+  const component = shallow(<App />);
+  const container = component.find("div");
+  const containerProp = container.props();
+  // expect(container).toHaveLength(1);
+  expect(containerProp.className).toEqual("App");
 });

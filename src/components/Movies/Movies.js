@@ -1,14 +1,13 @@
 import React, { Component, Fragment } from "react";
-import { mockData } from "../../api/mock";
 import MovieCard from "../MovieCard/MovieCard";
-import { Container, Row, Col, Button, Tabs, Tab } from "react-bootstrap";
-import Search from "../Search/Search";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { connect } from "react-redux";
 import {
   upcomingMovies,
   topRatedMovies,
-  searchMovies,
-} from "../../actions/movies";
+  searchMoviesByTitle,
+  searchMoviesByGenre,
+} from "../../actions";
 
 class Movies extends Component {
   constructor() {
@@ -87,5 +86,6 @@ const mapStateToProps = (state) => ({
 export default connect(mapStateToProps, {
   upcomingMovies,
   topRatedMovies,
-  searchMovies,
+  searchMoviesByTitle,
+  searchMoviesByGenre,
 })(Movies);

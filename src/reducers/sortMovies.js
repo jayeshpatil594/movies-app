@@ -1,7 +1,8 @@
 import {
   FETCH_TOP_RATED_MOVIES,
   FETCH_UPCOMING_MOVIES,
-  FETCH_SEARCH_MOVIES,
+  SEARCH_MOVIES_BY_TITLE,
+  SEARCH_MOVIES_BY_GENRE,
 } from "../actions/types";
 
 const initialState = {
@@ -20,7 +21,12 @@ export default (state = initialState, action) => {
         ...state,
         sortedMovies: action.payload,
       };
-    case FETCH_SEARCH_MOVIES:
+    case SEARCH_MOVIES_BY_TITLE:
+      return {
+        ...state,
+        sortedMovies: action.payload,
+      };
+    case SEARCH_MOVIES_BY_GENRE:
       return {
         ...state,
         sortedMovies: action.payload,

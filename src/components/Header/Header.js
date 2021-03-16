@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Search from "../Search/Search";
 import Cover from "../../assets/cover-image.jpg";
 import { Container } from "react-bootstrap";
